@@ -3,6 +3,8 @@
 ;LOADER_BASE_ADDR equ 0xA000
 ;LOADER_START_SECTOR equ 0x2
 ;----------------------------------------------
+
+%include "boot.inc"
 SECTION MBR vstart=0x7c00
     mov ax, cs
     mov ds, ax
